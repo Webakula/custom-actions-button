@@ -2,7 +2,7 @@
 
 namespace Encore\CustomActionsButton;
 
-use Encore\Admin\Grid\Displayers\Actions;
+use Encore\Admin\Table\Displayers\Actions;
 
 class CustomActions extends Actions
 {
