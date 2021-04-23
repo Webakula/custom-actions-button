@@ -2,7 +2,7 @@
 
 namespace Encore\CustomActionsButton;
 
-use Encore\Admin\Grid;
+use Encore\Admin\Table;
 use Illuminate\Support\ServiceProvider;
 
 class CustomActionsButtonServiceProvider extends ServiceProvider
@@ -17,7 +17,7 @@ class CustomActionsButtonServiceProvider extends ServiceProvider
         }
 
         $this->app->booted(function () {
-            Grid::init(function (Grid $grid) {
+            Table::init(function (Grid $grid) {
                 $grid->setActionClass(CustomActions::class);
             });
         });
